@@ -3,6 +3,7 @@ import { Schema } from "@/../amplify/data/resource";
 import { client } from "@/client";
 
 interface ConversationsContextType {
+  // about Schema["chat"]["type"](conversation) => https://docs.amplify.aws/react/ai/conversation/connect-your-frontend/#conversation
   conversations: Schema["chat"]["type"][];
   setConversations: React.Dispatch<
     React.SetStateAction<Schema["chat"]["type"][]>
